@@ -25,7 +25,9 @@ if( isset( $_POST['submit'] ) ){
 	$input->setTdFlag( $_POST['TdFlag']);
 	$input->setTdTenantName( $_POST['TdTenantName']);
 	$input->setTds2Type( $_POST['Tds2Type']);
-	
+	echo '<pre>';
+	print_r($_POST);
+	exit;
 	//API通信クラスをインスタンス化します
 	$exe = new EntryTran();/* @var $exec EntryTran */
 	
