@@ -74,6 +74,9 @@ class EntryTran extends BaseTran {
         if (is_null($resultMap)) {
 		    return null;
 		}
+        echo '<pre>';
+        print_r($resultMap);
+        exit;
         // EntryTranOutput作成し、戻す
 	    return new EntryTranOutput($resultMap);
 	}

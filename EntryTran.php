@@ -25,16 +25,13 @@ if( isset( $_POST['submit'] ) ){
 	$input->setTdFlag( $_POST['TdFlag']);
 	$input->setTdTenantName( $_POST['TdTenantName']);
 	$input->setTds2Type( $_POST['Tds2Type']);
-	echo '<pre>';
-	print_r($_POST);
-	exit;
+
 	//API通信クラスをインスタンス化します
 	$exe = new EntryTran();/* @var $exec EntryTran */
 	
 	//パラメータオブジェクトを引数に、実行メソッドを呼び、結果を受け取ります。
 	$output = $exe->exec( $input );/* @var $output EntryTranOutput */
-    echo $output->toString();
-    exit;
+
 	//実行後、その結果を確認します。
 	
 	if( $exe->isExceptionOccured() ){//取引の処理そのものがうまくいかない（通信エラー等）場合、例外が発生します。
