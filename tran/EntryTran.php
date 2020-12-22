@@ -55,9 +55,7 @@ class EntryTran extends BaseTran {
 
 	    // 元の店舗名を退避
 	    $tdTenantName = $input->getTdTenantName();
-        echo '<pre>';
-        print_r($tdTenantName);
-        exit;
+
         // 3Dセキュア店舗名をBASE64暗号化
 	    $encrypt = new Cryptgram();
 	    $encodeTdTenantName = $encrypt->encodeBase64($input->getTdTenantName());
@@ -66,6 +64,9 @@ class EntryTran extends BaseTran {
 	            ("3Dセキュア店舗名のBASE64暗号化後の長さが25Byteを超えています。", $this->exception);
 	        return null;
 	    }
+        echo '<pre>';
+        print_r($encodeTdTenantName);
+        exit;
 	    // 暗号化文字列を再セット
 		$input->setTdTenantName($encodeTdTenantName);
         // 接続しプロトコル呼び出し・結果取得
