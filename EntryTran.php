@@ -56,7 +56,8 @@ if( isset( $_POST['submit'] ) ){
 		//このif文を抜けて、結果を表示します。
 	}
 	
+} else {
+    //EntryTran入力・結果画面
+    require_once( PGCARD_SAMPLE_BASE . '/display/EntryTran.php' );
 }
 
-//EntryTran入力・結果画面
-require_once( PGCARD_SAMPLE_BASE . '/display/EntryTran.php' );
