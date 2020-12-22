@@ -70,6 +70,7 @@ class EntryTran extends BaseTran {
         // 接続しプロトコル呼び出し・結果取得
         $resultMap = $this->callProtocol($input->toString());
         echo '<pre>';
+        echo "here";
         print_r($resultMap);
         exit;
         // 店舗名を退避しておいた元の文字列に戻す
