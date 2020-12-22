@@ -1,7 +1,5 @@
 <?php
 require_once( 'config.php');
-$rest_json = file_get_contents("php://input");
-$_POST = json_decode($rest_json, true);
 if( isset( $_POST['submit'] ) ){
 	require_once( 'input/EntryTranInput.php');
 	require_once( 'tran/EntryTran.php');
