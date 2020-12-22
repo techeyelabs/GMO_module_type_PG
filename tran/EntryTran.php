@@ -55,7 +55,9 @@ class EntryTran extends BaseTran {
 
 	    // 元の店舗名を退避
 	    $tdTenantName = $input->getTdTenantName();
-
+        echo '<pre>';
+        print_r($tdTenantName);
+        exit;
         // 3Dセキュア店舗名をBASE64暗号化
 	    $encrypt = new Cryptgram();
 	    $encodeTdTenantName = $encrypt->encodeBase64($input->getTdTenantName());
@@ -74,9 +76,7 @@ class EntryTran extends BaseTran {
         if (is_null($resultMap)) {
 		    return null;
 		}
-        echo '<pre>';
-        print_r($resultMap);
-        exit;
+
         // EntryTranOutput作成し、戻す
 	    return new EntryTranOutput($resultMap);
 	}
