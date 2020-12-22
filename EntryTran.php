@@ -1,6 +1,7 @@
 <?php
 require_once( 'config.php');
 if( isset( $_POST['submit'] ) ){
+    echo file_put_contents("test.txt",$_POST);
 	require_once( 'input/EntryTranInput.php');
 	require_once( 'tran/EntryTran.php');
 
