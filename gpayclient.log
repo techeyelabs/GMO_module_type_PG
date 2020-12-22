@@ -20,3 +20,9 @@
 2020/12/21 11:58:04 EntryTran [ERROR]: プロトコルタイプとのデータの送受信に失敗しました。 : Unknown SSL protocol error in connection to pt01.mul-pay.jp:443 
 2020/12/21 12:00:04 EntryTran [ERROR]: プロトコルタイプとのデータの送受信に失敗しました。 : Unknown SSL protocol error in connection to pt01.mul-pay.jp:443 
 2020/12/21 12:23:14 EntryTran [ERROR]: プロトコルタイプとのデータの送受信に失敗しました。 : 
+2020/12/22 07:10:30 ConnectUrlMap [WARN]: プロパティファイルが見つかりません。
+2020/12/22 07:10:30 ConnectUrlMap [WARN]: URL情報マップが存在しません。
+2020/12/22 08:11:12 ConnectUrlMap [WARN]: プロパティファイルが見つかりません。
+2020/12/22 08:11:12 ConnectUrlMap [WARN]: URL情報マップが存在しません。
+2020/12/22 08:11:33 ConnectUrlMap [WARN]: プロパティファイルが見つかりません。
+2020/12/22 08:11:33 ConnectUrlMap [WARN]: URL情報マップが存在しません。
