@@ -69,10 +69,7 @@ class EntryTran extends BaseTran {
 		$input->setTdTenantName($encodeTdTenantName);
         // 接続しプロトコル呼び出し・結果取得
         $resultMap = $this->callProtocol($input->toString());
-        echo '<pre>';
-        echo "here";
-        print_r($resultMap);
-        exit;
+       
         // 店舗名を退避しておいた元の文字列に戻す
         $input->setTdTenantName($tdTenantName);
 	    // 戻り値がnullの場合、nullを戻す
